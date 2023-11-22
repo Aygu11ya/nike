@@ -1,0 +1,52 @@
+@media(max-width: 1140px){
+    .main{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media(max-width:994px){
+    .header-content{
+        background: url(../img/nike\ 994.jpg);
+        background-size: cover;
+        min-height: 100vh;
+        background-position: center;
+    }
+    .footer .container{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .footer ul{
+        flex-direction: row;
+        height: 100%;
+        justify-content: center;
+    }
+}
+@media(max-width:876px) {
+    .header-nav-list {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgba(85, 47, 47, 0.32);
+        inset: 0;
+        z-index: 999;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        transform: translateY(-100%);
+        transition: 1s;
+    }
+    .burger{
+        display: block;
+        width: 40px;
+        height: 40px;
+    }
+    .burger:hover ~.header-nav-list{
+        transform: translateY(0);
+    }
+}
+@media(max-width:576px){
+    .right-card{
+        width: 100%;
+    }
+}
